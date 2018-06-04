@@ -7,12 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9727ECD6209359800098B5C3 /* MissionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9727ECD5209359800098B5C3 /* MissionTableViewCell.swift */; };
+		972811752093BC8E00B2AB04 /* CouchbaseLiteSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972811742093BC8E00B2AB04 /* CouchbaseLiteSwift.framework */; };
+		972811762093BC8F00B2AB04 /* CouchbaseLiteSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 972811742093BC8E00B2AB04 /* CouchbaseLiteSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9728117C2093C8D600B2AB04 /* CouchbaseWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9728117B2093C8D600B2AB04 /* CouchbaseWrapper.swift */; };
+		9754F6B520AF1B2F000ECC43 /* ModelConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9754F6B420AF1B2F000ECC43 /* ModelConstants.swift */; };
+		9754F6B820AF2170000ECC43 /* MissionAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9754F6B720AF2170000ECC43 /* MissionAccess.swift */; };
 		97568DED209309E700DF7B47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97568DEC209309E700DF7B47 /* AppDelegate.swift */; };
-		97568DEF209309E700DF7B47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97568DEE209309E700DF7B47 /* ViewController.swift */; };
+		97568DEF209309E700DF7B47 /* MissionDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97568DEE209309E700DF7B47 /* MissionDetailController.swift */; };
 		97568DF2209309E700DF7B47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97568DF0209309E700DF7B47 /* Main.storyboard */; };
 		97568DF4209309E800DF7B47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97568DF3209309E800DF7B47 /* Assets.xcassets */; };
 		97568DF7209309E800DF7B47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97568DF5209309E800DF7B47 /* LaunchScreen.storyboard */; };
 		97568E02209309E800DF7B47 /* Mapotempo_FleetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97568E01209309E800DF7B47 /* Mapotempo_FleetTests.swift */; };
+		97568E0F20930B2800DF7B47 /* MissionsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97568E0E20930B2800DF7B47 /* MissionsListController.swift */; };
+		97568E192093123D00DF7B47 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97568E182093123D00DF7B47 /* MapViewController.swift */; };
+		97568E1C2093162000DF7B47 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97568E1B2093162000DF7B47 /* Mapbox.framework */; };
+		97568E1D2093162000DF7B47 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 97568E1B2093162000DF7B47 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9773151F2094CDCE0079A53B /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9773151E2094CDCE0079A53B /* Mission.swift */; };
+		977315222094D0890079A53B /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977315212094D0890079A53B /* BaseModel.swift */; };
+		978CD6402093282D00CD924D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978CD63F2093282D00CD924D /* Constants.swift */; };
+		9794FAD620C470AC0008D27C /* LinkedStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9794FAD520C470AC0008D27C /* LinkedStatus.swift */; };
+		97AB820220AD7CE5002E4FE1 /* MissionDetailEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AB820120AD7CE5002E4FE1 /* MissionDetailEditController.swift */; };
+		CA76261E960D4523FD7DBF7A /* Pods_Mapotempo_Fleet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9D62F95D6A4C18BD41167C /* Pods_Mapotempo_Fleet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,10 +41,32 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		97568E1E2093162000DF7B47 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				972811762093BC8F00B2AB04 /* CouchbaseLiteSwift.framework in Embed Frameworks */,
+				97568E1D2093162000DF7B47 /* Mapbox.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5194FC361C0E10CE14D52A3D /* Pods-Mapotempo-Fleet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mapotempo-Fleet.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mapotempo-Fleet/Pods-Mapotempo-Fleet.release.xcconfig"; sourceTree = "<group>"; };
+		7BC81AAC4741344B672B3CF6 /* Pods-Mapotempo-Fleet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mapotempo-Fleet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mapotempo-Fleet/Pods-Mapotempo-Fleet.debug.xcconfig"; sourceTree = "<group>"; };
+		9727ECD5209359800098B5C3 /* MissionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionTableViewCell.swift; sourceTree = "<group>"; };
+		972811742093BC8E00B2AB04 /* CouchbaseLiteSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLiteSwift.framework; sourceTree = "<group>"; };
+		9728117B2093C8D600B2AB04 /* CouchbaseWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouchbaseWrapper.swift; sourceTree = "<group>"; };
+		9754F6B420AF1B2F000ECC43 /* ModelConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelConstants.swift; sourceTree = "<group>"; };
+		9754F6B720AF2170000ECC43 /* MissionAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionAccess.swift; sourceTree = "<group>"; };
 		97568DE9209309E700DF7B47 /* Mapotempo-Fleet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mapotempo-Fleet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97568DEC209309E700DF7B47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		97568DEE209309E700DF7B47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		97568DEE209309E700DF7B47 /* MissionDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailController.swift; sourceTree = "<group>"; };
 		97568DF1209309E700DF7B47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97568DF3209309E800DF7B47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97568DF6209309E800DF7B47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +74,15 @@
 		97568DFD209309E800DF7B47 /* Mapotempo-FleetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mapotempo-FleetTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97568E01209309E800DF7B47 /* Mapotempo_FleetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapotempo_FleetTests.swift; sourceTree = "<group>"; };
 		97568E03209309E800DF7B47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97568E0E20930B2800DF7B47 /* MissionsListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsListController.swift; sourceTree = "<group>"; };
+		97568E182093123D00DF7B47 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		97568E1B2093162000DF7B47 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		9773151E2094CDCE0079A53B /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
+		977315212094D0890079A53B /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		978CD63F2093282D00CD924D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9794FAD520C470AC0008D27C /* LinkedStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedStatus.swift; sourceTree = "<group>"; };
+		97AB820120AD7CE5002E4FE1 /* MissionDetailEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailEditController.swift; sourceTree = "<group>"; };
+		9A9D62F95D6A4C18BD41167C /* Pods_Mapotempo_Fleet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mapotempo_Fleet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +90,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				972811752093BC8E00B2AB04 /* CouchbaseLiteSwift.framework in Frameworks */,
+				97568E1C2093162000DF7B47 /* Mapbox.framework in Frameworks */,
+				CA76261E960D4523FD7DBF7A /* Pods_Mapotempo_Fleet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +106,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10872D6684DAABE4C2CABFB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7BC81AAC4741344B672B3CF6 /* Pods-Mapotempo-Fleet.debug.xcconfig */,
+				5194FC361C0E10CE14D52A3D /* Pods-Mapotempo-Fleet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2103AA625195D9AF01CCF762 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A9D62F95D6A4C18BD41167C /* Pods_Mapotempo_Fleet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9728117A2093C89B00B2AB04 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				9794FAD420C4709D0008D27C /* Utils */,
+				9754F6B620AF215E000ECC43 /* Accessors */,
+				9773151D2094CDB70079A53B /* Models */,
+				9728117B2093C8D600B2AB04 /* CouchbaseWrapper.swift */,
+				9754F6B420AF1B2F000ECC43 /* ModelConstants.swift */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		9754F6B620AF215E000ECC43 /* Accessors */ = {
+			isa = PBXGroup;
+			children = (
+				9754F6B720AF2170000ECC43 /* MissionAccess.swift */,
+			);
+			path = Accessors;
+			sourceTree = "<group>";
+		};
 		97568DE0209309E700DF7B47 = {
 			isa = PBXGroup;
 			children = (
+				972811742093BC8E00B2AB04 /* CouchbaseLiteSwift.framework */,
+				97568E1B2093162000DF7B47 /* Mapbox.framework */,
 				97568DEB209309E700DF7B47 /* Mapotempo-Fleet */,
 				97568E00209309E800DF7B47 /* Mapotempo-FleetTests */,
+				9728117A2093C89B00B2AB04 /* lib */,
 				97568DEA209309E700DF7B47 /* Products */,
+				10872D6684DAABE4C2CABFB1 /* Pods */,
+				2103AA625195D9AF01CCF762 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +169,15 @@
 		97568DEB209309E700DF7B47 /* Mapotempo-Fleet */ = {
 			isa = PBXGroup;
 			children = (
+				97568E2020931C7100DF7B47 /* MissionsList */,
+				97568E1F20931C4200DF7B47 /* MissionsDetail */,
+				97568E172093121D00DF7B47 /* Map */,
 				97568DEC209309E700DF7B47 /* AppDelegate.swift */,
-				97568DEE209309E700DF7B47 /* ViewController.swift */,
 				97568DF0209309E700DF7B47 /* Main.storyboard */,
 				97568DF3209309E800DF7B47 /* Assets.xcassets */,
 				97568DF5209309E800DF7B47 /* LaunchScreen.storyboard */,
 				97568DF8209309E800DF7B47 /* Info.plist */,
+				978CD63F2093282D00CD924D /* Constants.swift */,
 			);
 			path = "Mapotempo-Fleet";
 			sourceTree = "<group>";
@@ -96,6 +191,57 @@
 			path = "Mapotempo-FleetTests";
 			sourceTree = "<group>";
 		};
+		97568E172093121D00DF7B47 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				97568E182093123D00DF7B47 /* MapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		97568E1F20931C4200DF7B47 /* MissionsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				97568DEE209309E700DF7B47 /* MissionDetailController.swift */,
+				97AB820120AD7CE5002E4FE1 /* MissionDetailEditController.swift */,
+			);
+			path = MissionsDetail;
+			sourceTree = "<group>";
+		};
+		97568E2020931C7100DF7B47 /* MissionsList */ = {
+			isa = PBXGroup;
+			children = (
+				97568E0E20930B2800DF7B47 /* MissionsListController.swift */,
+				9727ECD5209359800098B5C3 /* MissionTableViewCell.swift */,
+			);
+			path = MissionsList;
+			sourceTree = "<group>";
+		};
+		9773151D2094CDB70079A53B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				977315202094D0760079A53B /* Bases */,
+				9773151E2094CDCE0079A53B /* Mission.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		977315202094D0760079A53B /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				977315212094D0890079A53B /* BaseModel.swift */,
+			);
+			path = Bases;
+			sourceTree = "<group>";
+		};
+		9794FAD420C4709D0008D27C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9794FAD520C470AC0008D27C /* LinkedStatus.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +249,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97568E06209309E800DF7B47 /* Build configuration list for PBXNativeTarget "Mapotempo-Fleet" */;
 			buildPhases = (
+				3D610D06365DA545257ED9B7 /* [CP] Check Pods Manifest.lock */,
 				97568DE5209309E700DF7B47 /* Sources */,
 				97568DE6209309E700DF7B47 /* Frameworks */,
 				97568DE7209309E700DF7B47 /* Resources */,
+				97568E1E2093162000DF7B47 /* Embed Frameworks */,
+				97568E16209311E200DF7B47 /* ShellScript */,
+				A7A623EC137C1E0F0600619A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,13 +342,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3D610D06365DA545257ED9B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mapotempo-Fleet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97568E16209311E200DF7B47 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework/strip-frameworks.sh\"";
+		};
+		A7A623EC137C1E0F0600619A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Mapotempo-Fleet/Pods-Mapotempo-Fleet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MapboxGeocoder.swift/MapboxGeocoder.framework",
+				"${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxGeocoder.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toaster.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mapotempo-Fleet/Pods-Mapotempo-Fleet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		97568DE5209309E700DF7B47 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97568DEF209309E700DF7B47 /* ViewController.swift in Sources */,
+				9728117C2093C8D600B2AB04 /* CouchbaseWrapper.swift in Sources */,
+				977315222094D0890079A53B /* BaseModel.swift in Sources */,
+				9794FAD620C470AC0008D27C /* LinkedStatus.swift in Sources */,
+				978CD6402093282D00CD924D /* Constants.swift in Sources */,
+				9727ECD6209359800098B5C3 /* MissionTableViewCell.swift in Sources */,
+				97AB820220AD7CE5002E4FE1 /* MissionDetailEditController.swift in Sources */,
+				9754F6B520AF1B2F000ECC43 /* ModelConstants.swift in Sources */,
+				97568E0F20930B2800DF7B47 /* MissionsListController.swift in Sources */,
+				97568DEF209309E700DF7B47 /* MissionDetailController.swift in Sources */,
+				9754F6B820AF2170000ECC43 /* MissionAccess.swift in Sources */,
 				97568DED209309E700DF7B47 /* AppDelegate.swift in Sources */,
+				9773151F2094CDCE0079A53B /* Mission.swift in Sources */,
+				97568E192093123D00DF7B47 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +492,13 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/**",
+					"$(PROJECT_DIR)/Frameworks/**",
+					"$(PROJECT_DIR)/Pods/MapboxGeocoder.swift/**",
+					"$(PROJECT_DIR)/Pods/Toaster/**",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -337,6 +559,13 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/**",
+					"$(PROJECT_DIR)/Frameworks/**",
+					"$(PROJECT_DIR)/Pods/MapboxGeocoder.swift/**",
+					"$(PROJECT_DIR)/Pods/Toaster/**",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -356,9 +585,14 @@
 		};
 		97568E07209309E800DF7B47 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BC81AAC4741344B672B3CF6 /* Pods-Mapotempo-Fleet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Mapotempo-Fleet/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -373,9 +607,14 @@
 		};
 		97568E08209309E800DF7B47 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5194FC361C0E10CE14D52A3D /* Pods-Mapotempo-Fleet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Mapotempo-Fleet/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -1,0 +1,20 @@
+PODS:
+  - MapboxGeocoder.swift (0.8.1)
+  - Toaster (2.1.1)
+
+DEPENDENCIES:
+  - MapboxGeocoder.swift (~> 0.8)
+  - Toaster
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MapboxGeocoder.swift
+    - Toaster
+
+SPEC CHECKSUMS:
+  MapboxGeocoder.swift: 354fccd4834bae4c5b792428559eb87d994d2cf5
+  Toaster: a6c9532de1ded8105e77376f7dffeb2e12b46dbb
+
+PODFILE CHECKSUM: 7ae0f76e9cd31f34a50c6b278e41b8c95ebf4e35
+
+COCOAPODS: 1.5.3
